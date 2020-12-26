@@ -12,6 +12,9 @@
       <div>
         <button type="submit">Submit</button>
       </div>
+      <div>
+        <b-button @click="userLogout()">Logout</b-button>
+      </div>
     </form>
   </div>
 </template>
@@ -41,6 +44,12 @@ export default {
       } catch (err) {
         console.log(err);
       }
+    },
+    async userLogout() {
+        this.$auth.logout('local', {
+          data: this.login
+          }).then(console.log("success logout"))
+      
     }
   }
 };

@@ -52,8 +52,8 @@ auth: {
         },
         endpoints: {
           login: { url: 'http://localhost:3000/users', method: 'post' },
-          logout: { url: '/api/auth/logout', method: 'post' },
-          user: { url: '/api/auth/user', method: 'get' }
+          logout: { url: 'http://localhost:3000/users', method: 'post' },
+          user: { url: 'http://localhost:3000/users', method: 'get' }
         }
       }
     }

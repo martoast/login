@@ -2,7 +2,7 @@
     <div>
         <div>
         <h1>
-            Create User
+            Create User / Login
         </h1>
     </div>
     <login-form></login-form>
